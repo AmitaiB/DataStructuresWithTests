@@ -15,17 +15,17 @@
     else return NO;
 }
 
--(void)addToFront:(Node *)nodeToAdd {
+-(void)addToFront:(NSInteger)valueToAdd {
+    Node *nodeToAdd = [[Node alloc] init:valueToAdd];
 
-    if (self.isEmpty) {
-    }
-    else {
-        
-    }
+    if (self.isEmpty) { self.tail = nodeToAdd; }
+    else { nodeToAdd.next = self.head; }
+
+    self.head = nodeToAdd;
         //If not Empty
 }
 
--(void)addToBack:(Node *)nodeToAdd {
+-(void)addToBack:(NSInteger)valueToAdd {
     
 }
 

@@ -11,7 +11,6 @@
 		3806A9851C57C3A100A93279 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806A9841C57C3A100A93279 /* main.m */; };
 		3806A9871C57C3A100A93279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3806A9861C57C3A100A93279 /* Assets.xcassets */; };
 		3806A98A1C57C3A100A93279 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3806A9881C57C3A100A93279 /* MainMenu.xib */; };
-		3806A9951C57C3A100A93279 /* DataStructuresWithTestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806A9941C57C3A100A93279 /* DataStructuresWithTestsTests.m */; };
 		3806A9A11C57C4ED00A93279 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806A9A01C57C4ED00A93279 /* Node.m */; };
 		3806A9A51C57C50900A93279 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806A9A41C57C50900A93279 /* LinkedList.m */; };
 		3806A9A71C57C53400A93279 /* LinkedListSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806A9A61C57C53400A93279 /* LinkedListSpec.m */; };
@@ -39,7 +38,6 @@
 		3806A9891C57C3A100A93279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3806A98B1C57C3A100A93279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3806A9901C57C3A100A93279 /* DataStructuresWithTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructuresWithTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3806A9941C57C3A100A93279 /* DataStructuresWithTestsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStructuresWithTestsTests.m; sourceTree = "<group>"; };
 		3806A9961C57C3A100A93279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3806A99F1C57C4ED00A93279 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		3806A9A01C57C4ED00A93279 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				3806A9A61C57C53400A93279 /* LinkedListSpec.m */,
-				3806A9941C57C3A100A93279 /* DataStructuresWithTestsTests.m */,
 				3806A9961C57C3A100A93279 /* Info.plist */,
 			);
 			path = DataStructuresWithTestsTests;
@@ -309,7 +306,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3806A9951C57C3A100A93279 /* DataStructuresWithTestsTests.m in Sources */,
 				3806A9A71C57C53400A93279 /* LinkedListSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

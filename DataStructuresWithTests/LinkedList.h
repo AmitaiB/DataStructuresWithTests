@@ -14,8 +14,8 @@
 @property (nonatomic, strong) Node *head;
 @property (nonatomic, strong) Node *tail;
 
--(void)addToFront:(Node *)nodeToAdd;
--(void)addToBack:(Node *)nodeToAdd;
+-(void)addToFront:(NSInteger)valueToAdd;
+-(void)addToBack:(NSInteger)valueToAdd;
 -(BOOL)isEmpty;
 
 @end

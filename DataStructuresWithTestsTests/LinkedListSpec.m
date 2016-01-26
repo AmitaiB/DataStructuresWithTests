@@ -33,9 +33,23 @@ describe(@"LinkedList", ^{
     });
 
     
-    it(@"", ^{
-
+    it(@"has a head property of type Node", ^{
+        linkedList.head = [Node new];
+        expect([linkedList.head class]).to.equal(NSClassFromString(@"Node"));
     });  
+
+    it(@"has a tail property of type Node", ^{
+        linkedList.tail = [Node new];
+        expect([linkedList.tail class]).to.equal(NSClassFromString(@"Node"));
+    });
+
+    it(@"adding a value to an empty list creates a node that becomes the head and tail of the list", ^{
+        if (linkedList.isEmpty) {
+            [linkedList addToFront:6];
+        }
+        expect(linkedList.head.value).to.equal(6);
+        expect(linkedList.head).to.beIdenticalTo(linkedList.tail);
+    });
     
     afterEach(^{
         linkedList = nil;
