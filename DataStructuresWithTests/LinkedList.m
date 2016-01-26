@@ -11,7 +11,7 @@
 @implementation LinkedList
 
 -(BOOL)isEmpty {
-    if (self.head == nil) return YES;
+    if (self.count <= 0) return YES;
     else return NO;
 }
 
@@ -22,11 +22,63 @@
     else { nodeToAdd.next = self.head; }
 
     self.head = nodeToAdd;
-        //If not Empty
+    self.count++;
 }
 
 -(void)addToBack:(NSInteger)valueToAdd {
+    Node *nodeToAdd = [[Node alloc] init:valueToAdd];
     
+    if (self.isEmpty) { self.head = nodeToAdd; }
+    else { self.tail.next = nodeToAdd; }
+    
+    self.tail = nodeToAdd;
+    self.count++;
+}
+
+-(void)removeFromBack {
+    if (self.isEmpty) { return; }
+
+    if (self.count == 1) {
+        self.head = nil;
+        self.tail = nil;
+    }
+    
+    if (self.count > 1) {
+        Node *currentNode = self.head;
+        while (currentNode.next != self.tail) {
+            currentNode = currentNode.next;
+        }
+        currentNode.next = nil;
+        self.tail = currentNode;
+    }
+    self.count--;
+    [self printList];
+}
+
+-(void)removeFromFront {
+    if (self.isEmpty) { return; }
+    
+    if (self.count == 1) {
+        self.head = nil;
+        self.tail = nil;
+    }
+    
+    if (self.count > 1) {
+        Node *oldHead = self.head;
+        self.head = oldHead.next;
+        oldHead.next = nil;
+    }
+    self.count--;
+    [self printList];
+}
+
+-(void)printList {
+    Node *indexNode = self.head;
+    for (NSInteger i = 0; i < self.count; i++) {
+        NSLog(@"Node(%lu) value:%lu", i, indexNode.value);
+        indexNode = indexNode.next;
+    }
+    NSLog(@"Count: %lu", self.count);
 }
 
 @end

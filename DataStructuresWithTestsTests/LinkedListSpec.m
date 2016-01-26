@@ -16,13 +16,8 @@ SpecBegin(LinkedList)
 describe(@"LinkedList", ^{
     __block LinkedList *linkedList;
     
-    beforeAll(^{
-        NSInteger firstValue = 3;
-        NSInteger secondValue = 5;
-        NSInteger thirdValue = 7;
-
-
-    });
+//    beforeAll(^{
+//    });
     
     beforeEach(^{
         linkedList = [LinkedList new];
@@ -43,7 +38,7 @@ describe(@"LinkedList", ^{
         expect([linkedList.tail class]).to.equal(NSClassFromString(@"Node"));
     });
 
-    it(@"adding a value to an empty list creates a node that becomes the head and tail of the list", ^{
+    it(@"adding a value to the FRONT of an empty list creates a node that becomes the head and tail of the list", ^{
         if (linkedList.isEmpty) {
             [linkedList addToFront:6];
         }
@@ -51,13 +46,32 @@ describe(@"LinkedList", ^{
         expect(linkedList.head).to.beIdenticalTo(linkedList.tail);
     });
     
+    it(@"adding a value to the BACK of an empty list creates a node that becomes the head and tail of the list", ^{
+        if (linkedList.isEmpty) {
+            [linkedList addToBack:7];
+        }
+        expect(linkedList.head.value).to.equal(7);
+        expect(linkedList.head).to.beIdenticalTo(linkedList.tail);
+    });
+    
+//    it(@"removeFromBack will remove the last item, and decrement the count", ^{
+    it(@"removeFromBack will remove the last item", ^{
+        [linkedList addToFront:7];
+        [linkedList addToFront:5];
+        [linkedList addToFront:3];
+        
+        [linkedList removeFromBack];
+        [linkedList printList];
+        expect(linkedList.tail.value).to.equal(5);
+    });
+    
     afterEach(^{
         linkedList = nil;
     });
     
-    afterAll(^{
-
-    });
+//    afterAll(^{
+//
+//    });
 });
 
 SpecEnd

@@ -13,9 +13,15 @@
 
 @property (nonatomic, strong) Node *head;
 @property (nonatomic, strong) Node *tail;
+@property (nonatomic) NSInteger count;
 
+-(void)printList;
+-(BOOL)isEmpty;
 -(void)addToFront:(NSInteger)valueToAdd;
 -(void)addToBack:(NSInteger)valueToAdd;
--(BOOL)isEmpty;
+-(void)removeFromFront;
+-(void)removeFromBack;
+//-(Node*)shift;
+//-(Node*)pop;
 
 @end
