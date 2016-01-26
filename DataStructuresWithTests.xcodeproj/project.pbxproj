@@ -12,6 +12,9 @@
 		3806A9871C57C3A100A93279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3806A9861C57C3A100A93279 /* Assets.xcassets */; };
 		3806A98A1C57C3A100A93279 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3806A9881C57C3A100A93279 /* MainMenu.xib */; };
 		3806A9951C57C3A100A93279 /* DataStructuresWithTestsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806A9941C57C3A100A93279 /* DataStructuresWithTestsTests.m */; };
+		3806A9A11C57C4ED00A93279 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806A9A01C57C4ED00A93279 /* Node.m */; };
+		3806A9A51C57C50900A93279 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806A9A41C57C50900A93279 /* LinkedList.m */; };
+		3806A9A71C57C53400A93279 /* LinkedListSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806A9A61C57C53400A93279 /* LinkedListSpec.m */; };
 		95F0B8D237E3F49263F067C3 /* libPods-DataStructuresWithTestsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 205F91888A907B65BE4D8B43 /* libPods-DataStructuresWithTestsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,11 @@
 		3806A9901C57C3A100A93279 /* DataStructuresWithTestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructuresWithTestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3806A9941C57C3A100A93279 /* DataStructuresWithTestsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataStructuresWithTestsTests.m; sourceTree = "<group>"; };
 		3806A9961C57C3A100A93279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3806A99F1C57C4ED00A93279 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		3806A9A01C57C4ED00A93279 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		3806A9A31C57C50900A93279 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		3806A9A41C57C50900A93279 /* LinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
+		3806A9A61C57C53400A93279 /* LinkedListSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedListSpec.m; sourceTree = "<group>"; };
 		E452E56EC04E81AC5F9FAA65 /* Pods-DataStructuresWithTestsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresWithTestsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataStructuresWithTestsTests/Pods-DataStructuresWithTestsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +113,7 @@
 				3806A9861C57C3A100A93279 /* Assets.xcassets */,
 				3806A9881C57C3A100A93279 /* MainMenu.xib */,
 				3806A98B1C57C3A100A93279 /* Info.plist */,
+				3806A9A21C57C4F600A93279 /* Data Structures */,
 				3806A9831C57C3A100A93279 /* Supporting Files */,
 			);
 			path = DataStructuresWithTests;
@@ -121,10 +130,22 @@
 		3806A9931C57C3A100A93279 /* DataStructuresWithTestsTests */ = {
 			isa = PBXGroup;
 			children = (
+				3806A9A61C57C53400A93279 /* LinkedListSpec.m */,
 				3806A9941C57C3A100A93279 /* DataStructuresWithTestsTests.m */,
 				3806A9961C57C3A100A93279 /* Info.plist */,
 			);
 			path = DataStructuresWithTestsTests;
+			sourceTree = "<group>";
+		};
+		3806A9A21C57C4F600A93279 /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				3806A99F1C57C4ED00A93279 /* Node.h */,
+				3806A9A01C57C4ED00A93279 /* Node.m */,
+				3806A9A31C57C50900A93279 /* LinkedList.h */,
+				3806A9A41C57C50900A93279 /* LinkedList.m */,
+			);
+			name = "Data Structures";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +300,8 @@
 			files = (
 				3806A9851C57C3A100A93279 /* main.m in Sources */,
 				3806A9821C57C3A100A93279 /* AppDelegate.m in Sources */,
+				3806A9A51C57C50900A93279 /* LinkedList.m in Sources */,
+				3806A9A11C57C4ED00A93279 /* Node.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3806A9951C57C3A100A93279 /* DataStructuresWithTestsTests.m in Sources */,
+				3806A9A71C57C53400A93279 /* LinkedListSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
