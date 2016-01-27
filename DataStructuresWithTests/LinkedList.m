@@ -72,6 +72,13 @@
     [self printList];
 }
 
+-(void)removeAll {
+    self.head = nil;
+    self.tail = nil;
+    self.count = 0;
+    [self printList];
+}
+
 -(void)printList {
     Node *indexNode = self.head;
     for (NSInteger i = 0; i < self.count; i++) {
@@ -80,5 +87,6 @@
     }
     NSLog(@"Count: %lu", self.count);
 }
+
 
 @end

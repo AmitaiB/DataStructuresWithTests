@@ -65,6 +65,14 @@ describe(@"LinkedList", ^{
         expect(linkedList.tail.value).to.equal(5);
     });
     
+    it(@"will be empty after RemoveAll is called", ^{
+        [linkedList addToFront:6];
+        [linkedList addToFront:4];
+        [linkedList addToFront:2];
+        [linkedList removeAll];
+        expect(linkedList.isEmpty).to.beTruthy;
+    });
+    
     afterEach(^{
         linkedList = nil;
     });

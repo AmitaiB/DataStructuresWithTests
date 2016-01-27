@@ -21,7 +21,9 @@
 -(void)addToBack:(NSInteger)valueToAdd;
 -(void)removeFromFront;
 -(void)removeFromBack;
+-(void)removeAll;
 //-(Node*)shift;
 //-(Node*)pop;
+
 
 @end
