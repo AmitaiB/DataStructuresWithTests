@@ -18,44 +18,44 @@
 -(void)addToFront:(NSInteger)valueToAdd {
     Node *nodeToAdd = [[Node alloc] initWithValue:valueToAdd];
 
-    if (self.isEmpty) { self.tail = nodeToAdd; }
-    else { nodeToAdd.next = self.head; }
+    if (self.isEmpty) { [self listWithSingleNode:nodeToAdd]; }
+    else {
+        nodeToAdd.next = self.head;
+        self.head = nodeToAdd;
+        self.head.next.previous = self.head;
+    }
 
-    self.head = nodeToAdd;
     self.count++;
 }
 
 -(void)addToBack:(NSInteger)valueToAdd {
     Node *nodeToAdd = [[Node alloc] initWithValue:valueToAdd];
     
-    if (self.isEmpty) { self.head = nodeToAdd; }
-    else { self.tail.next = nodeToAdd; }
+    if (self.isEmpty) { [self listWithSingleNode:nodeToAdd]; }
+    else {
+        nodeToAdd.previous = self.tail;
+        self.tail = nodeToAdd;
+        self.tail.previous.next = nodeToAdd;
+    }
     
-    self.tail = nodeToAdd;
     self.count++;
 }
 
--(void)removeFromBack {
-    if (self.isEmpty) { return; }
-
-    if (self.count == 1) {
-        self.head = nil;
-        self.tail = nil;
-    }
-    
-    if (self.count > 1) {
-        Node *currentNode = self.head;
-        while (currentNode.next != self.tail) {
-            currentNode = currentNode.next;
-        }
-        currentNode.next = nil;
-        self.tail = currentNode;
-    }
-    self.count--;
-    [self printList];
+-(void)listWithSingleNode:(Node*)soleNode {
+    self.head = soleNode;
+    self.tail = soleNode;
 }
+
 
 -(void)removeFromFront {
+    [self commonRemoveFrontBack:YES];
+}
+
+-(void)removeFromBack {
+    [self commonRemoveFrontBack:NO];
+}
+
+-(void)commonRemoveFrontBack:(BOOL)removeFromFront {
     if (self.isEmpty) { return; }
     
     if (self.count == 1) {
@@ -64,13 +64,29 @@
     }
     
     if (self.count > 1) {
-        Node *oldHead = self.head;
-        self.head = oldHead.next;
-        oldHead.next = nil;
+        if (removeFromFront) {
+            Node *oldHead = self.head;
+            self.head = oldHead.next;
+            oldHead.next = nil;
+            self.head.previous = nil;
+        }
+        else {
+            Node *oldTail = self.tail;
+            self.tail = oldTail.previous;
+            oldTail.previous = nil;
+            self.tail.next = nil;
+        }
+// For singly linked lists (step through each element):
+//            Node *currentNode = self.head;
+//            while (currentNode.next != self.tail) {
+//                currentNode = currentNode.next;
+//        }
     }
+    
     self.count--;
     [self printList];
 }
+
 
 -(void)removeAll {
     self.head = nil;

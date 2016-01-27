@@ -12,6 +12,7 @@
 
 @property (nonatomic) NSInteger value;
 @property (nonatomic, strong) Node *next;
+@property (nonatomic, strong) Node *previous;
 
 -(instancetype)initWithValue:(NSInteger)value;
 
