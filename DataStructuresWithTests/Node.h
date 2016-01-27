@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Node : NSObject
+@interface Node <T> : NSObject
 
-@property (nonatomic) NSInteger value;
+@property (nonatomic) id value;
 @property (nonatomic, strong) Node *next;
 @property (nonatomic, strong) Node *previous;
 
--(instancetype)initWithValue:(NSInteger)value;
+-(instancetype)initWithValue:(T)value;
 
 @end

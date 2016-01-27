@@ -40,15 +40,15 @@ describe(@"LinkedList", ^{
 
     it(@"adding a value to the FRONT of an empty list creates a node that becomes the head and tail of the list", ^{
         if (linkedList.isEmpty) {
-            [linkedList addToFront:6];
+            [linkedList addToFront:@(6)];
         }
-        expect(linkedList.head.value).to.equal(6);
+        expect(linkedList.head.value).to.equal(@(6));
         expect(linkedList.head).to.beIdenticalTo(linkedList.tail);
     });
     
     it(@"adding a value to the BACK of an empty list creates a node that becomes the head and tail of the list", ^{
         if (linkedList.isEmpty) {
-            [linkedList addToBack:7];
+            [linkedList addToBack:@(7)];
         }
         expect(linkedList.head.value).to.equal(7);
         expect(linkedList.head).to.beIdenticalTo(linkedList.tail);
@@ -56,19 +56,19 @@ describe(@"LinkedList", ^{
     
 //    it(@"removeFromBack will remove the last item, and decrement the count", ^{
     it(@"removeFromBack will remove the last item", ^{
-        [linkedList addToFront:7];
-        [linkedList addToFront:5];
-        [linkedList addToFront:3];
+        [linkedList addToFront:@(7)];
+        [linkedList addToFront:@(5)];
+        [linkedList addToFront:@(3)];
         
         [linkedList removeFromBack];
         [linkedList printList];
-        expect(linkedList.tail.value).to.equal(5);
+        expect(linkedList.tail.value).to.equal(@(5));
     });
     
     it(@"will be empty after RemoveAll is called", ^{
-        [linkedList addToFront:6];
-        [linkedList addToFront:4];
-        [linkedList addToFront:2];
+        [linkedList addToFront:@(6)];
+        [linkedList addToFront:@(4)];
+        [linkedList addToFront:@(2)];
         [linkedList removeAll];
         expect(linkedList.isEmpty).to.beTruthy;
     });

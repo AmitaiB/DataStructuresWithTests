@@ -15,7 +15,7 @@
     else return NO;
 }
 
--(void)addToFront:(NSInteger)valueToAdd {
+-(void)addToFront:(id)valueToAdd {
     Node *nodeToAdd = [[Node alloc] initWithValue:valueToAdd];
 
     if (self.isEmpty) { [self listWithSingleNode:nodeToAdd]; }
@@ -28,7 +28,7 @@
     self.count++;
 }
 
--(void)addToBack:(NSInteger)valueToAdd {
+-(void)addToBack:(id)valueToAdd {
     Node *nodeToAdd = [[Node alloc] initWithValue:valueToAdd];
     
     if (self.isEmpty) { [self listWithSingleNode:nodeToAdd]; }
@@ -98,7 +98,7 @@
 -(void)printList {
     Node *indexNode = self.head;
     for (NSInteger i = 0; i < self.count; i++) {
-        NSLog(@"Node(%lu) value:%lu", i, indexNode.value);
+        NSLog(@"Node(%ld) value:%@", (long)i, indexNode.value);
         indexNode = indexNode.next;
     }
     NSLog(@"Count: %lu", self.count);

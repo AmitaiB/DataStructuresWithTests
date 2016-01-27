@@ -10,7 +10,7 @@
 
 @implementation Node
 
--(instancetype)initWithValue:(NSInteger)value {
+-(instancetype)initWithValue:(id)value {
     if (!(self = [super init])) return  nil;
     _value = value;
     return  self;

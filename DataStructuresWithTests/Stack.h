@@ -10,6 +10,6 @@
 
 @interface Stack : NSObject
 
--(void)push
+-(void)push;
 
 @end

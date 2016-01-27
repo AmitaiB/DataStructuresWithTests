@@ -17,8 +17,8 @@
 
 -(void)printList;
 -(BOOL)isEmpty;
--(void)addToFront:(NSInteger)valueToAdd;
--(void)addToBack:(NSInteger)valueToAdd;
+-(void)addToFront:(id)valueToAdd;
+-(void)addToBack:(id)valueToAdd;
 -(void)removeFromFront;
 -(void)removeFromBack;
 -(void)removeAll;
