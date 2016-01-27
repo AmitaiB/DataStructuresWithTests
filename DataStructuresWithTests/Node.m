@@ -10,9 +10,9 @@
 
 @implementation Node
 
--(instancetype)init:(NSInteger)forValue {
+-(instancetype)initWithValue:(NSInteger)value {
     if (!(self = [super init])) return  nil;
-    _value = forValue;
+    _value = value;
     return  self;
 }
 

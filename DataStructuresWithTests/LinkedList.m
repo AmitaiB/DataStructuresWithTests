@@ -16,7 +16,7 @@
 }
 
 -(void)addToFront:(NSInteger)valueToAdd {
-    Node *nodeToAdd = [[Node alloc] init:valueToAdd];
+    Node *nodeToAdd = [[Node alloc] initWithValue:valueToAdd];
 
     if (self.isEmpty) { self.tail = nodeToAdd; }
     else { nodeToAdd.next = self.head; }
@@ -26,7 +26,7 @@
 }
 
 -(void)addToBack:(NSInteger)valueToAdd {
-    Node *nodeToAdd = [[Node alloc] init:valueToAdd];
+    Node *nodeToAdd = [[Node alloc] initWithValue:valueToAdd];
     
     if (self.isEmpty) { self.head = nodeToAdd; }
     else { self.tail.next = nodeToAdd; }

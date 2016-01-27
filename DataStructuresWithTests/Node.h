@@ -13,6 +13,6 @@
 @property (nonatomic) NSInteger value;
 @property (nonatomic, strong) Node *next;
 
--(instancetype)init:(NSInteger)forValue;
+-(instancetype)initWithValue:(NSInteger)value;
 
 @end
