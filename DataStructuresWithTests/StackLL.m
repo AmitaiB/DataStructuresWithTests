@@ -1,5 +1,5 @@
 //
-//  Stack.m
+//  StackLL.m
 //  DataStructuresWithTests
 //
 //  Created by Amitai Blickstein on 1/27/16.
@@ -10,15 +10,24 @@
  Implemented with a Linked List.
  */
 
-#import "Stack.h"
+#import "StackLL.h"
 #import "LinkedList.h"
 
-@interface Stack()
+@interface StackLL()
 @property (nonatomic, strong) LinkedList *list;
 @end
 
-@implementation Stack
+@implementation StackLL
 
+-(void)push:(NSInteger)value {
+    [self.list addToFront:value];
+}
+
+-(NSInteger)pop {
+    NSInteger valueToReturn = self.list.head.value;
+    [self.list removeFromFront];
+    return valueToReturn;
+}
 
 
 
