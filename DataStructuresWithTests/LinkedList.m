@@ -117,8 +117,23 @@
 }
 
 -(NSString *)printList {
+    if ([self isEmpty]) {
+        NSLog(@"It's Empty!");
+        return @"It's Empty!";
+    }
+    
     NSMutableString *description = [@"" mutableCopy];
     Node *indexNode = self.head;
+    NSInteger index = 0;
+    while (![indexNode isEqual:self.tail]) {
+        [description appendString:[NSString stringWithFormat:@"Node(%lu) value:%lu\n", index, indexNode.value]];
+        indexNode = indexNode.next;
+        index++;
+    }
+    [description appendFormat:@"Count: %lu", self.count];
+    NSLog(@"%@", description);
+    
+    /*
     for (NSInteger i = 0; i < self.count; i++) {
         NSString *nodeDesc = [NSString stringWithFormat:@"Node(%lu) value:%lu\n", i, indexNode.value];
         NSLog(@"%@", nodeDesc);
@@ -126,6 +141,7 @@
         indexNode = indexNode.next;
     }
     NSLog(@"Count: %lu", self.count);
+     */
     
     return [description copy];
 }

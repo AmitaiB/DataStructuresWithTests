@@ -35,7 +35,10 @@ describe(@"StackLL", ^{
 
     
     it(@"can push multiple values onto the stack", ^{
-
+        [stack push:5];
+        [stack push:7];
+        [stack printStack];
+        expect([stack containsValue:5] && [stack containsValue:7]).to.beTruthy;
     });
     
     afterEach(^{
