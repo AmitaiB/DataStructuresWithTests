@@ -6,25 +6,32 @@
 //  Copyright 2016 Amitai Blickstein, LLC. All rights reserved.
 //
 
-#import "Specta.h"
+#import <Specta.h>
+#import <Expecta.h>
 #import "StackLL.h"
 
 
 SpecBegin(StackLL)
 
 describe(@"StackLL", ^{
+    __block StackLL *stack;
     
     beforeAll(^{
-
+        stack = [StackLL new];
     });
     
     beforeEach(^{
 
     });
     
-    it(@"", ^{
-
-    });  
+    it(@"can be created", ^{
+        expect(stack).toNot.beNil;
+    });
+    
+    it(@"can push a value onto the stack", ^{
+        [stack push:3];
+        expect([stack printStack])
+    })
     
     afterEach(^{
 

@@ -12,5 +12,6 @@
 
 -(void)push:(NSInteger)value;
 -(NSInteger)pop;
+-(NSString *)printStack;
 
 @end

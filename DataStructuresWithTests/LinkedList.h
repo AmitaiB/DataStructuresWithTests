@@ -15,7 +15,7 @@
 @property (nonatomic, strong) Node *tail;
 @property (nonatomic) NSInteger count;
 
--(void)printList;
+-(NSString *)printList;
 -(BOOL)isEmpty;
 -(void)addToFront:(NSInteger)valueToAdd;
 -(void)addToBack:(NSInteger)valueToAdd;

@@ -95,13 +95,18 @@
     [self printList];
 }
 
--(void)printList {
+-(NSString *)printList {
+    NSMutableString *description = [@"" mutableCopy];
     Node *indexNode = self.head;
     for (NSInteger i = 0; i < self.count; i++) {
-        NSLog(@"Node(%lu) value:%lu", i, indexNode.value);
+        NSString *nodeDesc = [NSString stringWithFormat:@"Node(%lu) value:%lu\n", i, indexNode.value];
+        NSLog(@"%@", nodeDesc);
+        [description appendString:nodeDesc];
         indexNode = indexNode.next;
     }
     NSLog(@"Count: %lu", self.count);
+    
+    return [description copy];
 }
 
 
