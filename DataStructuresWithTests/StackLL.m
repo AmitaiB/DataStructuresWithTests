@@ -33,4 +33,12 @@
     return [self.list printList];
 }
 
+-(NSInteger)indexOfValue:(NSInteger)aValue {
+    return [self.list indexOfValue:aValue];
+}
+
+-(BOOL)containsValue:(NSInteger)aValue {
+    return [self.list containsValue:aValue];
+}
+
 @end

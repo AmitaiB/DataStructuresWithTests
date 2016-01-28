@@ -22,6 +22,11 @@
 -(void)removeFromFront;
 -(void)removeFromBack;
 -(void)removeAll;
+
+-(NSInteger)indexOfValue:(NSInteger)aValue;
+-(BOOL)containsValue:(NSInteger)aValue;
+
+
 //-(Node*)shift;
 //-(Node*)pop;
 

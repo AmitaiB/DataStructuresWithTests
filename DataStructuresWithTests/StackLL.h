@@ -14,4 +14,7 @@
 -(NSInteger)pop;
 -(NSString *)printStack;
 
+-(NSInteger)indexOfValue:(NSInteger)aValue;
+-(BOOL)containsValue:(NSInteger)aValue;
+
 @end

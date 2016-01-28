@@ -95,6 +95,27 @@
     [self printList];
 }
 
+    //Walk through the list, check each node for the value;
+    //return the value of the first hit.
+-(NSInteger)indexOfValue:(NSInteger)aValue {
+    Node *indexNode = self.head;
+    NSInteger index = 0;
+    while (![indexNode isEqual:self.tail]) {
+        if (indexNode.value == aValue) {
+            return index;
+        }
+        
+        indexNode = indexNode.next;
+        index++;
+    }
+    
+    return -1;
+}
+
+-(BOOL)containsValue:(NSInteger)aValue {
+    return [self indexOfValue:aValue] != -1;
+}
+
 -(NSString *)printList {
     NSMutableString *description = [@"" mutableCopy];
     Node *indexNode = self.head;

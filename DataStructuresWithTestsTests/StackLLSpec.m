@@ -30,8 +30,8 @@ describe(@"StackLL", ^{
     
     it(@"can push a value onto the stack", ^{
         [stack push:3];
-        expect([stack printStack])
-    })
+        expect().to.contain(@"3");
+    });
     
     afterEach(^{
 
