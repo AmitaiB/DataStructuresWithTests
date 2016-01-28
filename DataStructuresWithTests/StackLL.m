@@ -19,6 +19,14 @@
 
 @implementation StackLL
 
+-(instancetype)init {
+    if (!(self = [super init])) return nil;
+    
+    _list = [LinkedList new];
+    
+    return self;
+}
+
 -(void)push:(NSInteger)value {
     [self.list addToFront:value];
 }

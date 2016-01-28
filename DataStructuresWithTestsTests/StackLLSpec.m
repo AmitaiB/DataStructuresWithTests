@@ -32,7 +32,6 @@ describe(@"StackLL", ^{
         [stack push:3];
         expect([stack containsValue:3]).to.beTruthy;
     });
-
     
     it(@"can push multiple values onto the stack", ^{
         [stack push:5];
@@ -40,6 +39,15 @@ describe(@"StackLL", ^{
         [stack printStack];
         expect([stack containsValue:5] && [stack containsValue:7]).to.beTruthy;
     });
+    
+    it(@"pushes new values onto the top of the stack", ^{
+        [stack push:11];
+        [stack push:13];
+        [stack push:15];
+        expect([stack pop]).to.equal(15);
+    });
+    
+    
     
     afterEach(^{
 
