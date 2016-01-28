@@ -15,7 +15,11 @@
 		3806A9A51C57C50900A93279 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806A9A41C57C50900A93279 /* LinkedList.m */; };
 		3806A9A71C57C53400A93279 /* LinkedListSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806A9A61C57C53400A93279 /* LinkedListSpec.m */; };
 		382786101C5930BD00BD39F0 /* StackLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3827860F1C5930BD00BD39F0 /* StackLL.m */; };
+<<<<<<< HEAD
 		382786121C59419000BD39F0 /* StackLLSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 382786111C59419000BD39F0 /* StackLLSpec.m */; };
+=======
+		38D508A21C5A02BB0010806D /* StackLLSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D508A11C5A02BB0010806D /* StackLLSpec.m */; };
+>>>>>>> nsinteger-branch
 		95F0B8D237E3F49263F067C3 /* libPods-DataStructuresWithTestsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 205F91888A907B65BE4D8B43 /* libPods-DataStructuresWithTestsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +52,11 @@
 		3806A9A61C57C53400A93279 /* LinkedListSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedListSpec.m; sourceTree = "<group>"; };
 		3827860E1C5930BD00BD39F0 /* StackLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackLL.h; sourceTree = "<group>"; };
 		3827860F1C5930BD00BD39F0 /* StackLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLL.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		382786111C59419000BD39F0 /* StackLLSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLLSpec.m; sourceTree = "<group>"; };
+=======
+		38D508A11C5A02BB0010806D /* StackLLSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLLSpec.m; sourceTree = "<group>"; };
+>>>>>>> nsinteger-branch
 		E452E56EC04E81AC5F9FAA65 /* Pods-DataStructuresWithTestsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresWithTestsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataStructuresWithTestsTests/Pods-DataStructuresWithTestsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +144,7 @@
 				382786111C59419000BD39F0 /* StackLLSpec.m */,
 				3806A9A61C57C53400A93279 /* LinkedListSpec.m */,
 				3806A9961C57C3A100A93279 /* Info.plist */,
+				38D508A11C5A02BB0010806D /* StackLLSpec.m */,
 			);
 			path = DataStructuresWithTestsTests;
 			sourceTree = "<group>";
@@ -324,7 +333,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3806A9A71C57C53400A93279 /* LinkedListSpec.m in Sources */,
+<<<<<<< HEAD
 				382786121C59419000BD39F0 /* StackLLSpec.m in Sources */,
+=======
+				38D508A21C5A02BB0010806D /* StackLLSpec.m in Sources */,
+>>>>>>> nsinteger-branch
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

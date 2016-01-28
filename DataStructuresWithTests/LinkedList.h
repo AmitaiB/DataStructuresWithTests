@@ -15,13 +15,23 @@
 @property (nonatomic, strong) Node<T> *tail;
 @property (nonatomic) NSInteger count;
 
--(void)printList;
+-(NSString *)printList;
 -(BOOL)isEmpty;
 -(void)addToFront:(id)valueToAdd;
 -(void)addToBack:(id)valueToAdd;
 -(void)removeFromFront;
 -(void)removeFromBack;
 -(void)removeAll;
+<<<<<<< HEAD
+=======
+
+-(NSInteger)indexOfValue:(NSInteger)aValue;
+-(BOOL)containsValue:(NSInteger)aValue;
+
+
+//-(Node*)shift;
+//-(Node*)pop;
+>>>>>>> nsinteger-branch
 
 
 @end
