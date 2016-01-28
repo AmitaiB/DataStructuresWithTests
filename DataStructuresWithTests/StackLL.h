@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface StackLL : NSObject
 
 -(void)push:(NSInteger)value;
 -(NSInteger)pop;
--(NSString *)printStack;
 
+-(NSString *)printStack;
 -(NSInteger)indexOfValue:(NSInteger)aValue;
 -(BOOL)containsValue:(NSInteger)aValue;
 
