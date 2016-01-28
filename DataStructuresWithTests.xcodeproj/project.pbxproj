@@ -16,6 +16,7 @@
 		3806A9A71C57C53400A93279 /* LinkedListSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806A9A61C57C53400A93279 /* LinkedListSpec.m */; };
 		382786101C5930BD00BD39F0 /* StackLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3827860F1C5930BD00BD39F0 /* StackLL.m */; };
 		38D508A21C5A02BB0010806D /* StackLLSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D508A11C5A02BB0010806D /* StackLLSpec.m */; };
+		38D508A51C5A359F0010806D /* StackArr.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D508A41C5A359F0010806D /* StackArr.m */; };
 		95F0B8D237E3F49263F067C3 /* libPods-DataStructuresWithTestsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 205F91888A907B65BE4D8B43 /* libPods-DataStructuresWithTestsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,8 @@
 		3827860E1C5930BD00BD39F0 /* StackLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackLL.h; sourceTree = "<group>"; };
 		3827860F1C5930BD00BD39F0 /* StackLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLL.m; sourceTree = "<group>"; };
 		38D508A11C5A02BB0010806D /* StackLLSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLLSpec.m; sourceTree = "<group>"; };
+		38D508A31C5A359F0010806D /* StackArr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackArr.h; sourceTree = "<group>"; };
+		38D508A41C5A359F0010806D /* StackArr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackArr.m; sourceTree = "<group>"; };
 		E452E56EC04E81AC5F9FAA65 /* Pods-DataStructuresWithTestsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresWithTestsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataStructuresWithTestsTests/Pods-DataStructuresWithTestsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +160,8 @@
 			children = (
 				3827860E1C5930BD00BD39F0 /* StackLL.h */,
 				3827860F1C5930BD00BD39F0 /* StackLL.m */,
+				38D508A31C5A359F0010806D /* StackArr.h */,
+				38D508A41C5A359F0010806D /* StackArr.m */,
 			);
 			name = Stack;
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D508A51C5A359F0010806D /* StackArr.m in Sources */,
 				3806A9851C57C3A100A93279 /* main.m in Sources */,
 				3806A9821C57C3A100A93279 /* AppDelegate.m in Sources */,
 				3806A9A51C57C50900A93279 /* LinkedList.m in Sources */,
