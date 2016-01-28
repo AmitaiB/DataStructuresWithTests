@@ -1,5 +1,5 @@
 //
-//  Stack.h
+//  StackLL.h
 //  DataStructuresWithTests
 //
 //  Created by Amitai Blickstein on 1/27/16.
@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Stack : NSObject
+@interface StackLL <T> : NSObject
 
--(void)push;
+-(void)printAndEmpty;
+
+-(void)push:(T)value;
+-(T)pop;
+
 
 @end

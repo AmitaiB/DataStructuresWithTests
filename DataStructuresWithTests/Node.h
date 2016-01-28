@@ -10,7 +10,7 @@
 
 @interface Node <T> : NSObject
 
-@property (nonatomic) id value;
+@property (nonatomic, strong) id value;
 @property (nonatomic, strong) Node *next;
 @property (nonatomic, strong) Node *previous;
 

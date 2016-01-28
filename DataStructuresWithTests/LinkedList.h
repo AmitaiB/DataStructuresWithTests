@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "Node.h"
 
-@interface LinkedList : NSObject
+@interface LinkedList<T> : NSObject
 
-@property (nonatomic, strong) Node *head;
-@property (nonatomic, strong) Node *tail;
+@property (nonatomic, strong) Node<T> *head;
+@property (nonatomic, strong) Node<T> *tail;
 @property (nonatomic) NSInteger count;
 
 -(void)printList;
@@ -22,8 +22,6 @@
 -(void)removeFromFront;
 -(void)removeFromBack;
 -(void)removeAll;
-//-(Node*)shift;
-//-(Node*)pop;
 
 
 @end
