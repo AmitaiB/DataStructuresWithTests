@@ -49,26 +49,39 @@
     //    [self.array addObject:@(value)];
 }
 
+-(NSInteger)peek {
+    if (self.array.count == 0) {
+        @throw NSInvalidArgumentException;
+    }
+    return self.array.lastObject.integerValue;
+}
+
 -(NSInteger)pop {
-    NSInteger valueToReturn = self.array.lastObject.integerValue;
+    NSInteger valueToReturn = [self peek];
     [self.array removeLastObject];
     return valueToReturn;
 }
 
+
+
 -(NSString *)printStack {
-    __block NSMutableString *description = [@"" mutableCopy];
+    __block NSMutableString *description = [@"\n" mutableCopy];
     [self.array enumerateObjectsWithOptions:NSEnumerationReverse usingBlock:^(NSNumber * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        if (idx == self.itemsNum - 1) { *stop = YES; }
         
+        [description appendFormat:@"%@\n", obj];
     }];
+    
+    return [description copy];
 }
 
 
 -(NSInteger)indexOfValue:(NSInteger)aValue {
-    
+    return [self.array indexOfObject:@(aValue)];
 }
 
 -(BOOL)containsValue:(NSInteger)aValue {
-    
+    return [self.array containsObject:@(aValue)];
 }
 
 
