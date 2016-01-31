@@ -18,6 +18,7 @@
 		38D508A21C5A02BB0010806D /* StackLLSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D508A11C5A02BB0010806D /* StackLLSpec.m */; };
 		38D508A51C5A359F0010806D /* StackArr.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D508A41C5A359F0010806D /* StackArr.m */; };
 		38FF084D1C5BDBF40054B7E0 /* StackArrSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FF084C1C5BDBF40054B7E0 /* StackArrSpec.m */; };
+		38FF08511C5DA0CD0054B7E0 /* QueueLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FF08501C5DA0CD0054B7E0 /* QueueLL.m */; };
 		95F0B8D237E3F49263F067C3 /* libPods-DataStructuresWithTestsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 205F91888A907B65BE4D8B43 /* libPods-DataStructuresWithTestsTests.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,8 @@
 		38D508A31C5A359F0010806D /* StackArr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackArr.h; sourceTree = "<group>"; };
 		38D508A41C5A359F0010806D /* StackArr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackArr.m; sourceTree = "<group>"; };
 		38FF084C1C5BDBF40054B7E0 /* StackArrSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackArrSpec.m; sourceTree = "<group>"; };
+		38FF084F1C5DA0CD0054B7E0 /* QueueLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueLL.h; sourceTree = "<group>"; };
+		38FF08501C5DA0CD0054B7E0 /* QueueLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueLL.m; sourceTree = "<group>"; };
 		E452E56EC04E81AC5F9FAA65 /* Pods-DataStructuresWithTestsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStructuresWithTestsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataStructuresWithTestsTests/Pods-DataStructuresWithTestsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,6 +156,7 @@
 				3806A9A01C57C4ED00A93279 /* Node.m */,
 				3806A9A31C57C50900A93279 /* LinkedList.h */,
 				3806A9A41C57C50900A93279 /* LinkedList.m */,
+				38FF084E1C5BDD750054B7E0 /* Queue */,
 				3827860D1C59309E00BD39F0 /* Stack */,
 			);
 			name = "Data Structures";
@@ -167,6 +171,15 @@
 				38D508A41C5A359F0010806D /* StackArr.m */,
 			);
 			name = Stack;
+			sourceTree = "<group>";
+		};
+		38FF084E1C5BDD750054B7E0 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				38FF084F1C5DA0CD0054B7E0 /* QueueLL.h */,
+				38FF08501C5DA0CD0054B7E0 /* QueueLL.m */,
+			);
+			name = Queue;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38FF08511C5DA0CD0054B7E0 /* QueueLL.m in Sources */,
 				38D508A51C5A359F0010806D /* StackArr.m in Sources */,
 				3806A9851C57C3A100A93279 /* main.m in Sources */,
 				3806A9821C57C3A100A93279 /* AppDelegate.m in Sources */,
