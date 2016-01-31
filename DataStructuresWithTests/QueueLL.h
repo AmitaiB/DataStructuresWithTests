@@ -11,10 +11,13 @@
 
 @interface QueueLL : NSObject
 
--(void)push:(NSInteger)value;
--(NSInteger)pop;
+-(void)enqueue:(NSInteger)value;
+-(NSInteger)dequeue;
+-(NSInteger)peek;
+-(void)removeAll;
+-(BOOL)isEmpty;
 
--(NSString *)printStack;
+-(NSString *)printQueue;
 -(NSInteger)indexOfValue:(NSInteger)aValue;
 -(BOOL)containsValue:(NSInteger)aValue;
 

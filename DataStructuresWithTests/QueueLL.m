@@ -22,18 +22,21 @@
     return self;
 }
 
--(void)push:(NSInteger)value {
-    [self.list addToFront:value];
+-(void)enqueue:(NSInteger)value {
+    [self.list addToBack:value];
 }
 
--(NSInteger)pop {
-    NSInteger valueToReturn = self.list.head.value;
+-(NSInteger)peek {
+    return self.list.head.value;
+}
+
+-(NSInteger)dequeue {
+    NSInteger valueToReturn = [self peek];
     [self.list removeFromFront];
     return valueToReturn;
 }
 
-
--(NSString *)printStack {
+-(NSString *)printQueue {
     return [self.list printList];
 }
 
@@ -43,6 +46,19 @@
 
 -(BOOL)containsValue:(NSInteger)aValue {
     return [self.list containsValue:aValue];
+}
+
+/**
+ *  Ideally, this would dealloc each node as well.
+ */
+-(void)removeAll {
+    self.list.head = nil;
+    self.list.tail = nil;
+    self.list.count = 0;
+}
+
+-(BOOL)isEmpty {
+    return [self.list isEmpty];
 }
 
 @end
