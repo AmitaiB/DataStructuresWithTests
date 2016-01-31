@@ -36,4 +36,25 @@
     return valueToReturn;
 }
 
+-(void)removeAll {
+    [self.array removeAllObjects];
+}
+
+-(BOOL)isEmpty {
+    return self.array.count == 0;
+}
+
+-(NSString *)printQueue {
+    NSLog(@"%@", [self.array description]);
+    return [self.array description];
+}
+
+-(NSInteger)indexOfValue:(NSInteger)aValue {
+    return [self.array indexOfObject:@(aValue)];
+}
+
+-(BOOL)containsValue:(NSInteger)aValue {
+    return [self.array containsObject:@(aValue)];
+}
+
 @end
