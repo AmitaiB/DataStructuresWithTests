@@ -16,6 +16,7 @@
 		3806A9A71C57C53400A93279 /* LinkedListSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 3806A9A61C57C53400A93279 /* LinkedListSpec.m */; };
 		381868EF1C5E76B5002B1CB4 /* QueueLLSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 381868EE1C5E76B5002B1CB4 /* QueueLLSpec.m */; };
 		381868F21C5E84A6002B1CB4 /* QueueArr.m in Sources */ = {isa = PBXBuildFile; fileRef = 381868F11C5E84A6002B1CB4 /* QueueArr.m */; };
+		381868F41C5E8742002B1CB4 /* QueueArrSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 381868F31C5E8742002B1CB4 /* QueueArrSpec.m */; };
 		382786101C5930BD00BD39F0 /* StackLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3827860F1C5930BD00BD39F0 /* StackLL.m */; };
 		38D508A21C5A02BB0010806D /* StackLLSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D508A11C5A02BB0010806D /* StackLLSpec.m */; };
 		38D508A51C5A359F0010806D /* StackArr.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D508A41C5A359F0010806D /* StackArr.m */; };
@@ -54,6 +55,7 @@
 		381868EE1C5E76B5002B1CB4 /* QueueLLSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueLLSpec.m; sourceTree = "<group>"; };
 		381868F01C5E84A6002B1CB4 /* QueueArr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueArr.h; sourceTree = "<group>"; };
 		381868F11C5E84A6002B1CB4 /* QueueArr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueArr.m; sourceTree = "<group>"; };
+		381868F31C5E8742002B1CB4 /* QueueArrSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueArrSpec.m; sourceTree = "<group>"; };
 		3827860E1C5930BD00BD39F0 /* StackLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackLL.h; sourceTree = "<group>"; };
 		3827860F1C5930BD00BD39F0 /* StackLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLL.m; sourceTree = "<group>"; };
 		38D508A11C5A02BB0010806D /* StackLLSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLLSpec.m; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				38D508A11C5A02BB0010806D /* StackLLSpec.m */,
 				38FF084C1C5BDBF40054B7E0 /* StackArrSpec.m */,
 				381868EE1C5E76B5002B1CB4 /* QueueLLSpec.m */,
+				381868F31C5E8742002B1CB4 /* QueueArrSpec.m */,
 			);
 			path = DataStructuresWithTestsTests;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				3806A9A71C57C53400A93279 /* LinkedListSpec.m in Sources */,
 				38D508A21C5A02BB0010806D /* StackLLSpec.m in Sources */,
 				38FF084D1C5BDBF40054B7E0 /* StackArrSpec.m in Sources */,
+				381868F41C5E8742002B1CB4 /* QueueArrSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
