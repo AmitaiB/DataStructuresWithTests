@@ -89,5 +89,10 @@
     [self.array removeAllObjects];
 }
 
+-(BOOL)isEmpty {
+    return self.array.count == 0;
+}
+
+
 
 @end

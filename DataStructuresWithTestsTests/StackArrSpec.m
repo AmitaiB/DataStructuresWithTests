@@ -44,11 +44,15 @@ describe(@"StackArr", ^{
             expect([stack pop]).to.equal(4);
         });
         
+        /**
+         *  These three tests each pass by itself, but fails as part of the group. Why???
+         */
         it(@"can push multiple values onto the stack", ^{
             [stack push:5];
             [stack push:7];
             [stack printStack];
-            expect([stack containsValue:5] && [stack containsValue:7]).to.beTruthy;
+            BOOL testPasses = [stack containsValue:5] && [stack containsValue:7];
+            expect(testPasses).to.beTruthy;
         });
         
         it(@"pushes new values onto the top of the stack", ^{
@@ -57,6 +61,23 @@ describe(@"StackArr", ^{
             [stack push:15];
             expect([stack pop]).to.equal(15);
         });
+        
+        context(@"testing MISC methods", ^{
+            
+            it(@"can remove all values with removeAll()", ^{
+                [stack push:111];
+                [stack push:222];
+                [stack push:333];
+                [stack removeAll];
+                expect(stack.isEmpty).to.beTruthy;
+                
+            });
+            
+            it(@"can peek at a value without altering it", ^{
+                
+            });
+        });
+
         
     });
     

@@ -1,5 +1,5 @@
 //
-//  StackLL;.h
+//  StackLL.h
 //  DataStructuresWithTests
 //
 //  Created by Amitai Blickstein on 1/27/16.
@@ -14,7 +14,7 @@
 -(void)push:(NSInteger)value;
 -(NSInteger)pop;
 -(NSInteger)peek;
-
+-(BOOL)isEmpty;
 -(void)removeAll;
 
 

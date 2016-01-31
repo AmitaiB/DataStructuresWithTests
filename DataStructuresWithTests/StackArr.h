@@ -14,6 +14,8 @@
 -(NSInteger)pop;
 -(NSInteger)peek;
 -(void)removeAll;
+-(BOOL)isEmpty;
+
 
 -(NSString *)printStack;
 -(NSInteger)indexOfValue:(NSInteger)aValue;

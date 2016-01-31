@@ -54,6 +54,9 @@
     return [self.list containsValue:aValue];
 }
 
+-(BOOL)isEmpty {
+    return self.list.isEmpty;
+}
 
 /**
  *   Ideally, this would dealloc each node asynchronously as well.
