@@ -51,8 +51,7 @@ describe(@"StackArr", ^{
             [stack push:5];
             [stack push:7];
             [stack printStack];
-            BOOL testPasses = [stack containsValue:5] && [stack containsValue:7];
-            expect(testPasses).to.beTruthy;
+            expect([stack containsValue:5] && [stack containsValue:7]).to.beTruthy;
         });
         
         it(@"pushes new values onto the top of the stack", ^{
@@ -74,7 +73,9 @@ describe(@"StackArr", ^{
             });
             
             it(@"can peek at a value without altering it", ^{
-                
+                /**
+                 *  TODO:
+                 */
             });
         });
 
