@@ -85,4 +85,9 @@
 }
 
 
+-(void)removeAll {
+    [self.array removeAllObjects];
+}
+
+
 @end

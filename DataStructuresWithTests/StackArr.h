@@ -13,7 +13,7 @@
 -(void)push:(NSInteger)value;
 -(NSInteger)pop;
 -(NSInteger)peek;
-
+-(void)removeAll;
 
 -(NSString *)printStack;
 -(NSInteger)indexOfValue:(NSInteger)aValue;

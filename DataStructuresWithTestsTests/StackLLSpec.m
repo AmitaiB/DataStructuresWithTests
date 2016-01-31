@@ -58,6 +58,20 @@ describe(@"StackLL", ^{
         });
         
     });
+    
+    context(@"testing MISC methods", ^{
+        
+        it(@"can remove all values with removeAll()", ^{
+            [stack push:111];
+            [stack push:222];
+            [stack push:333];
+
+        });
+        
+        it(@"can peek at a value without altering it", ^{
+           
+        });
+    });
         
     
     
