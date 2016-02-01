@@ -11,7 +11,10 @@
 @interface TreeNode : NSObject
 
 @property (nonatomic) NSInteger value;
-@property (nonatomic, strong) TreeNode *lhsChild;
-@property (nonatomic, strong) TreeNode *rhsChild;
+@property (nonatomic, strong) TreeNode *parent;
+@property (nonatomic, strong) NSMutableSet *children;
+
+-(instancetype)initWithValue:(NSInteger)aValue;
+
 
 @end

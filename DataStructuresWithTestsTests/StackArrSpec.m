@@ -1,4 +1,5 @@
-//
+/**
+//    
 //  StackArrSpec.m
 //  DataStructuresWithTests
 //
@@ -46,7 +47,7 @@ describe(@"StackArr", ^{
         
         /**
          *  These three tests each pass by itself, but fails as part of the group. Why???
-         */
+        * /
         it(@"can push multiple values onto the stack", ^{
             [stack push:5];
             [stack push:7];
@@ -75,7 +76,7 @@ describe(@"StackArr", ^{
             it(@"can peek at a value without altering it", ^{
                 /**
                  *  TODO:
-                 */
+                 * /
             });
         });
 
@@ -90,3 +91,4 @@ describe(@"StackArr", ^{
 });
 
 SpecEnd
+*/

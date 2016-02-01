@@ -14,18 +14,39 @@
 SpecBegin(Tree)
 
 describe(@"Tree", ^{
-    
+    __block Tree *tree;
     beforeAll(^{
-
     });
     
     beforeEach(^{
+        tree = [Tree new];
+    });
+    
+    context(@"BASICS", ^{
+        
+        it(@"can be created", ^{
+            expect(tree).toNot.beNil;
+        });
+    });
+    
+    context(@"IDENTITY", ^{
+       it(@"has a root node", ^{
+           SEL rootSEL = @selector(root);
+           expect(tree).to.respondTo(rootSEL);
+       });
+        
+        
+        it(@"returns YES for isEmpty for new trees", ^{
+            expect([tree isEmpty]).to.beTruthy;
+        });
+        
+        it(@"returns NO for isEmpty for trees with a value", ^{
+            [tree addValue:5];
+            expect([tree isEmpty]).to.beFalsy;
+        });
 
     });
     
-    it(@"", ^{
-
-    });  
     
     afterEach(^{
 

@@ -19,7 +19,8 @@
 		381868F41C5E8742002B1CB4 /* QueueArrSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 381868F31C5E8742002B1CB4 /* QueueArrSpec.m */; };
 		381868F91C5EB4F9002B1CB4 /* TreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 381868F81C5EB4F9002B1CB4 /* TreeNode.m */; };
 		381868FC1C5EBB35002B1CB4 /* Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = 381868FB1C5EBB35002B1CB4 /* Tree.m */; };
-		381869001C5EBB7B002B1CB4 /* TreeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 381868FF1C5EBB7B002B1CB4 /* TreeSpec.m */; };
+		381869021C5EBC07002B1CB4 /* TreeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 381869011C5EBC07002B1CB4 /* TreeSpec.m */; };
+		381869051C5EE5E2002B1CB4 /* BinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 381869041C5EE5E2002B1CB4 /* BinaryTree.m */; };
 		382786101C5930BD00BD39F0 /* StackLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3827860F1C5930BD00BD39F0 /* StackLL.m */; };
 		38D508A21C5A02BB0010806D /* StackLLSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D508A11C5A02BB0010806D /* StackLLSpec.m */; };
 		38D508A51C5A359F0010806D /* StackArr.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D508A41C5A359F0010806D /* StackArr.m */; };
@@ -63,7 +64,9 @@
 		381868F81C5EB4F9002B1CB4 /* TreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeNode.m; sourceTree = "<group>"; };
 		381868FA1C5EBB35002B1CB4 /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
 		381868FB1C5EBB35002B1CB4 /* Tree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tree.m; sourceTree = "<group>"; };
-		381868FF1C5EBB7B002B1CB4 /* TreeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeSpec.m; sourceTree = "<group>"; };
+		381869011C5EBC07002B1CB4 /* TreeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeSpec.m; sourceTree = "<group>"; };
+		381869031C5EE5E2002B1CB4 /* BinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
+		381869041C5EE5E2002B1CB4 /* BinaryTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryTree.m; sourceTree = "<group>"; };
 		3827860E1C5930BD00BD39F0 /* StackLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackLL.h; sourceTree = "<group>"; };
 		3827860F1C5930BD00BD39F0 /* StackLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLL.m; sourceTree = "<group>"; };
 		38D508A11C5A02BB0010806D /* StackLLSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLLSpec.m; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 				381868F81C5EB4F9002B1CB4 /* TreeNode.m */,
 				381868FA1C5EBB35002B1CB4 /* Tree.h */,
 				381868FB1C5EBB35002B1CB4 /* Tree.m */,
+				381869031C5EE5E2002B1CB4 /* BinaryTree.h */,
+				381869041C5EE5E2002B1CB4 /* BinaryTree.m */,
 			);
 			name = "Binary Node & Trees";
 			sourceTree = "<group>";
@@ -211,7 +216,7 @@
 		381868FE1C5EBB66002B1CB4 /* TreeDSTests */ = {
 			isa = PBXGroup;
 			children = (
-				381868FF1C5EBB7B002B1CB4 /* TreeSpec.m */,
+				381869011C5EBC07002B1CB4 /* TreeSpec.m */,
 			);
 			name = TreeDSTests;
 			sourceTree = "<group>";
@@ -388,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				381869051C5EE5E2002B1CB4 /* BinaryTree.m in Sources */,
 				38FF08511C5DA0CD0054B7E0 /* QueueLL.m in Sources */,
 				38D508A51C5A359F0010806D /* StackArr.m in Sources */,
 				3806A9851C57C3A100A93279 /* main.m in Sources */,
@@ -405,8 +411,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				381869021C5EBC07002B1CB4 /* TreeSpec.m in Sources */,
 				381868EF1C5E76B5002B1CB4 /* QueueLLSpec.m in Sources */,
-				381869001C5EBB7B002B1CB4 /* TreeSpec.m in Sources */,
 				3806A9A71C57C53400A93279 /* LinkedListSpec.m in Sources */,
 				38D508A21C5A02BB0010806D /* StackLLSpec.m in Sources */,
 				38FF084D1C5BDBF40054B7E0 /* StackArrSpec.m in Sources */,
