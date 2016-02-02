@@ -46,10 +46,9 @@
  *
  *  @return Returns the next free node, acc. to a breadth-first walk | k = 2.
  */
-/*
--(TreeNode*)nextFreeNode {
 
+-(TreeNode*)nextFreeNode {
+    
 }
- */
 
 @end

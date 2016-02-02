@@ -24,6 +24,7 @@
 		382786101C5930BD00BD39F0 /* StackLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3827860F1C5930BD00BD39F0 /* StackLL.m */; };
 		38D508A21C5A02BB0010806D /* StackLLSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D508A11C5A02BB0010806D /* StackLLSpec.m */; };
 		38D508A51C5A359F0010806D /* StackArr.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D508A41C5A359F0010806D /* StackArr.m */; };
+		38F9FC3F1C61107000628D7E /* BinarySearchTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F9FC3E1C61107000628D7E /* BinarySearchTree.m */; };
 		38FF084D1C5BDBF40054B7E0 /* StackArrSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FF084C1C5BDBF40054B7E0 /* StackArrSpec.m */; };
 		38FF08511C5DA0CD0054B7E0 /* QueueLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FF08501C5DA0CD0054B7E0 /* QueueLL.m */; };
 		95F0B8D237E3F49263F067C3 /* libPods-DataStructuresWithTestsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 205F91888A907B65BE4D8B43 /* libPods-DataStructuresWithTestsTests.a */; };
@@ -72,6 +73,8 @@
 		38D508A11C5A02BB0010806D /* StackLLSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLLSpec.m; sourceTree = "<group>"; };
 		38D508A31C5A359F0010806D /* StackArr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackArr.h; sourceTree = "<group>"; };
 		38D508A41C5A359F0010806D /* StackArr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackArr.m; sourceTree = "<group>"; };
+		38F9FC3D1C61107000628D7E /* BinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearchTree.h; sourceTree = "<group>"; };
+		38F9FC3E1C61107000628D7E /* BinarySearchTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearchTree.m; sourceTree = "<group>"; };
 		38FF084C1C5BDBF40054B7E0 /* StackArrSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackArrSpec.m; sourceTree = "<group>"; };
 		38FF084F1C5DA0CD0054B7E0 /* QueueLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueLL.h; sourceTree = "<group>"; };
 		38FF08501C5DA0CD0054B7E0 /* QueueLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueLL.m; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 				381868FB1C5EBB35002B1CB4 /* Tree.m */,
 				381869031C5EE5E2002B1CB4 /* BinaryTree.h */,
 				381869041C5EE5E2002B1CB4 /* BinaryTree.m */,
+				38F9FC3D1C61107000628D7E /* BinarySearchTree.h */,
+				38F9FC3E1C61107000628D7E /* BinarySearchTree.m */,
 			);
 			name = "Binary Node & Trees";
 			sourceTree = "<group>";
@@ -397,6 +402,7 @@
 				38FF08511C5DA0CD0054B7E0 /* QueueLL.m in Sources */,
 				38D508A51C5A359F0010806D /* StackArr.m in Sources */,
 				3806A9851C57C3A100A93279 /* main.m in Sources */,
+				38F9FC3F1C61107000628D7E /* BinarySearchTree.m in Sources */,
 				3806A9821C57C3A100A93279 /* AppDelegate.m in Sources */,
 				3806A9A51C57C50900A93279 /* LinkedList.m in Sources */,
 				381868FC1C5EBB35002B1CB4 /* Tree.m in Sources */,
