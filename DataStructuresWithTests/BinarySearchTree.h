@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TreeNode.h"
+#import "BinaryTreeNode.h"
 
 @interface BinarySearchTree : NSObject
 
 -(BOOL)isEmpty;
-
+-(void)addValue:(NSInteger)value;
 @end
