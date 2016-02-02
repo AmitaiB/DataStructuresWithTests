@@ -12,7 +12,12 @@
 @interface BinarySearchTree : NSObject
 
 -(BOOL)isEmpty;
--(void)addValue:(NSInteger)value;
--(BOOL)containsValue:(NSInteger)value;
+-(void)addValue:(NSInteger)value fromNode:(BinaryTreeNode*)node;
+
 -(BinaryTreeNode*)nodeWithValue:(NSInteger)value;
+-(BOOL)containsValue:(NSInteger)value;
+
+-(void)treeTraversalFromNode:(BinaryTreeNode*)node withSelector:(SEL)selectorToPerformOnNodes withObject:(id)obj;
+//-(void)preOrderTraversal:(BinaryTreeNode*)node;
+//-(void)postOrderTraversal:(BinaryTreeNode*)node;
 @end
