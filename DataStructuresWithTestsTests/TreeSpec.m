@@ -1,5 +1,5 @@
 //
-//  TreeSpec.m
+//  BinarySearchTreeSpec.m
 //  DataStructuresWithTests
 //
 //  Created by Amitai Blickstein on 1/31/16.
@@ -8,18 +8,18 @@
 
 #import <Specta.h>
 #import <Expecta.h>
-#import "Tree.h"
+#import "BinarySearchTree.h"
 
 
-SpecBegin(Tree)
+SpecBegin(BinarySearchTree)
 
-describe(@"Tree", ^{
-    __block Tree *tree;
+describe(@"BinarySearchTree", ^{
+    __block BinarySearchTree *tree;
     beforeAll(^{
     });
     
     beforeEach(^{
-        tree = [Tree new];
+        tree = [BinarySearchTree new];
     });
     
     context(@"BASICS", ^{
@@ -36,11 +36,11 @@ describe(@"Tree", ^{
        });
         
         
-        it(@"returns YES for isEmpty for new trees", ^{
+        it(@"returns YES for isEmpty for new BinarySearchTrees", ^{
             expect([tree isEmpty]).to.beTruthy;
         });
         
-        it(@"returns NO for isEmpty for trees with a value", ^{
+        it(@"returns NO for isEmpty for BinarySearchTrees with a value", ^{
             [tree addValue:5];
             expect([tree isEmpty]).to.beFalsy;
         });

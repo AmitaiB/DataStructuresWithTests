@@ -8,6 +8,14 @@
 
 #import "BinarySearchTree.h"
 
+@interface BinarySearchTree()
+@property (nonatomic, strong) TreeNode *root;
+@end
+
 @implementation BinarySearchTree
+
+-(BOOL)isEmpty {
+    
+}
 
 @end

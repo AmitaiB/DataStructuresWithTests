@@ -11,4 +11,6 @@
 
 @interface BinarySearchTree : NSObject
 
+-(BOOL)isEmpty;
+
 @end
