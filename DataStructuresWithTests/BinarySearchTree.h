@@ -13,4 +13,6 @@
 
 -(BOOL)isEmpty;
 -(void)addValue:(NSInteger)value;
+-(BOOL)containsValue:(NSInteger)value;
+-(BinaryTreeNode*)nodeWithValue:(NSInteger)value;
 @end

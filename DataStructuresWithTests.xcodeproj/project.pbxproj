@@ -18,8 +18,8 @@
 		381868F21C5E84A6002B1CB4 /* QueueArr.m in Sources */ = {isa = PBXBuildFile; fileRef = 381868F11C5E84A6002B1CB4 /* QueueArr.m */; };
 		381868F41C5E8742002B1CB4 /* QueueArrSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 381868F31C5E8742002B1CB4 /* QueueArrSpec.m */; };
 		381868F91C5EB4F9002B1CB4 /* BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 381868F81C5EB4F9002B1CB4 /* BinaryTreeNode.m */; };
-		381869021C5EBC07002B1CB4 /* TreeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 381869011C5EBC07002B1CB4 /* TreeSpec.m */; };
 		382786101C5930BD00BD39F0 /* StackLL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3827860F1C5930BD00BD39F0 /* StackLL.m */; };
+		38A094C11C6139A50025C157 /* BinarySearchTreeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A094C01C6139A50025C157 /* BinarySearchTreeSpec.m */; };
 		38D508A21C5A02BB0010806D /* StackLLSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D508A11C5A02BB0010806D /* StackLLSpec.m */; };
 		38D508A51C5A359F0010806D /* StackArr.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D508A41C5A359F0010806D /* StackArr.m */; };
 		38F9FC3F1C61107000628D7E /* BinarySearchTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F9FC3E1C61107000628D7E /* BinarySearchTree.m */; };
@@ -61,9 +61,9 @@
 		381868F31C5E8742002B1CB4 /* QueueArrSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueArrSpec.m; sourceTree = "<group>"; };
 		381868F71C5EB4F9002B1CB4 /* BinaryTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinaryTreeNode.h; sourceTree = "<group>"; };
 		381868F81C5EB4F9002B1CB4 /* BinaryTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeNode.m; sourceTree = "<group>"; };
-		381869011C5EBC07002B1CB4 /* TreeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeSpec.m; sourceTree = "<group>"; };
 		3827860E1C5930BD00BD39F0 /* StackLL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackLL.h; sourceTree = "<group>"; };
 		3827860F1C5930BD00BD39F0 /* StackLL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLL.m; sourceTree = "<group>"; };
+		38A094C01C6139A50025C157 /* BinarySearchTreeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BinarySearchTreeSpec.m; sourceTree = "<group>"; };
 		38D508A11C5A02BB0010806D /* StackLLSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLLSpec.m; sourceTree = "<group>"; };
 		38D508A31C5A359F0010806D /* StackArr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackArr.h; sourceTree = "<group>"; };
 		38D508A41C5A359F0010806D /* StackArr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackArr.m; sourceTree = "<group>"; };
@@ -211,7 +211,7 @@
 		381868FE1C5EBB66002B1CB4 /* TreeDSTests */ = {
 			isa = PBXGroup;
 			children = (
-				381869011C5EBC07002B1CB4 /* TreeSpec.m */,
+				38A094C01C6139A50025C157 /* BinarySearchTreeSpec.m */,
 			);
 			name = TreeDSTests;
 			sourceTree = "<group>";
@@ -405,12 +405,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				381869021C5EBC07002B1CB4 /* TreeSpec.m in Sources */,
 				381868EF1C5E76B5002B1CB4 /* QueueLLSpec.m in Sources */,
 				3806A9A71C57C53400A93279 /* LinkedListSpec.m in Sources */,
 				38D508A21C5A02BB0010806D /* StackLLSpec.m in Sources */,
 				38FF084D1C5BDBF40054B7E0 /* StackArrSpec.m in Sources */,
 				381868F41C5E8742002B1CB4 /* QueueArrSpec.m in Sources */,
+				38A094C11C6139A50025C157 /* BinarySearchTreeSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
